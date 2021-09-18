@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(253, 242, 222);
+}
+
+/* Container/Página */
+#main {
+    margin: 60px auto;
+    padding: 0 10px;
+    width: 90%;
+    max-width: 990px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px -2px rgba(0, 0, 0, 0.5);
+    background-color: #f5f5f5;
+}
+
+/* Cabeçalho */
+#header {
+    border-bottom: 1px solid rgb(202, 202, 202);
+    margin-bottom: 30px;
+}
+
+    #header h1 {
+        font-family: 'Carattere-Regular';
+        font-size: 4em;
+        margin: 0;
+        margin-left: 15px;
+    }
+
+/* Principal */
+#gallery {
+    margin: 0;
+    padding: 0; 
+}
+
+.year {
+    margin: 15px;
+}
+
+.artist {
+    display: inline-block;
+    position: relative;
+    width: 315px;
+    height: 130px;
+    transition: all 1s;
+    cursor: pointer;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+
+    .artist:hover {
+        transform: scale(1.05);
+        box-shadow: 3px 3px 8px -2px;
+        background-position: -10% -10%;
+    }
+
+    .artist:not(:last-child) {
+        margin-right: 15px;
+    }
+
+    .artist .info {
+        color: black;
+        background-color: #fff;
+        font-size: 1.2em;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 150px;
+        padding: 0 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+        .artist .info h3, .artist .info p {
+            margin: 0;
+        }
+
+        .artist .info h3 {
+            font-size: 0.9em;
+        }
+
+        .artist .info p {
+            font-size: 0.8em;
+        }
+
+.leonardo-da-vinci {
+    background: url('../img/leonardo-da-vinci.jpg');
+}
