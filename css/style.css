@@ -3,7 +3,7 @@ body {
 }
 
 /* Container/Página */
-#main {
+#container {
     margin: 60px auto;
     padding: 0 10px;
     width: 90%;
@@ -20,39 +20,94 @@ body {
     margin-bottom: 30px;
 }
 
+    #header a {
+        display: inline-block;
+        color: purple;  
+        transition: all 1s;
+    }
+
+        #header a:hover {
+            letter-spacing: 1.4px;
+            color: blueviolet;  
+        }
+
     #header h1 {
-        font-family: 'Carattere-Regular';
+        font-family: 'Carattere', cursive;
         font-size: 4em;
         margin: 0;
         margin-left: 15px;
     }
 
 /* Principal */
-#gallery {
-    margin: 0;
-    padding: 0; 
+.country {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed rgb(202, 202, 202);
+    font-family: 'Quicksand', sans-serif;
 }
 
-.year {
-    margin: 15px;
+    .country img {
+        width: 30px;
+        border-radius: 20px;
+        transition: all 0.5s;
+    }
+
+        .country img:hover  {
+            border-radius: 0;
+        }
+
+        
+        .country img:hover + h2  {
+            letter-spacing: 1px;
+        }
+
+    .country h2 {
+        display: inline-block;
+        font-size: 1.8em;
+        margin: 0;
+        margin-left: 10px;
+        vertical-align: top;
+        transition: all 1s;
+    }
+
+.gallery {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    padding: 0; 
 }
 
 .artist {
     display: inline-block;
     position: relative;
     width: 315px;
-    height: 130px;
+    height: 135px;
     transition: all 1s;
     cursor: pointer;
     border-radius: 10px;
     background-repeat: no-repeat;
+    box-shadow: 3px 3px 8px -2px rgba(0, 0, 0, 0.8);
 }
 
     .artist:hover {
         transform: scale(1.05);
-        box-shadow: 3px 3px 8px -2px;
-        background-position: -10% -10%;
+        box-shadow: 5px 5px 12px -2px rgba(0, 0, 0, 0.8);
+        background-position: -10% 10%;
     }
+
+        .artist:hover .info {
+            background-color: #eeecec;
+
+        }
+
+        .artist:hover .info h3 {
+            letter-spacing: 0.5px;
+            color: purple;
+        }
+
+        .artist:hover .info p {
+            color: rgb(100, 1, 100);  
+        }
 
     .artist:not(:last-child) {
         margin-right: 15px;
@@ -61,7 +116,6 @@ body {
     .artist .info {
         color: black;
         background-color: #fff;
-        font-size: 1.2em;
         display: inline-block;
         position: absolute;
         right: 0;
@@ -70,6 +124,7 @@ body {
         padding: 0 10px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+        transition: all 1s;
     }
 
         .artist .info h3, .artist .info p {
@@ -77,13 +132,14 @@ body {
         }
 
         .artist .info h3 {
-            font-size: 0.9em;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1em;
+            transition: all 1s;
         }
 
         .artist .info p {
-            font-size: 0.8em;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+            margin-bottom: 10px;
+            transition: all 1s;
         }
-
-.leonardo-da-vinci {
-    background: url('../img/leonardo-da-vinci.jpg');
-}

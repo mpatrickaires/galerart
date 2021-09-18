@@ -1,7 +1,20 @@
 @font-face {
-    font-family: 'Carattere-Regular';
+    font-family: 'Carattere';
     src: url('../fonts/Carattere-Regular.ttf') format('opentype');
-    font-weight: 100;
+    font-style: italic;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-VariableFont_wght.ttf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBoldItalic.ttf') format('opentype');
+    font-style: bold;
+    font-display: swap;
+}
