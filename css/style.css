@@ -80,7 +80,8 @@ body {
 .artist {
     display: inline-block;
     position: relative;
-    width: 315px;
+    margin-bottom: 20px;
+    width: 305px;
     height: 135px;
     transition: all 1s;
     cursor: pointer;
@@ -116,7 +117,6 @@ body {
     .artist .info {
         color: black;
         background-color: #fff;
-        display: inline-block;
         position: absolute;
         right: 0;
         height: 100%;
@@ -143,3 +143,55 @@ body {
             margin-bottom: 10px;
             transition: all 1s;
         }
+
+/* Modal - Arte */
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.modal-show {
+    display: flex;
+}
+
+#art {
+    width: 80%;
+    height: 90%;
+    background: black;
+    background-size: contain;
+    position: relative;
+    border: 5px double blueviolet;
+    transition: all 2s;
+}
+
+    #art:hover {
+        border-color: purple;
+    }
+
+#modal-close {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    font-size: 50px;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+    #modal-close:hover {
+        color: blueviolet;
+    }

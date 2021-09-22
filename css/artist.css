@@ -1,11 +1,11 @@
-.leonardo-da-vinci {
+#leonardo-da-vinci {
     background: url('../img/leonardo-da-vinci.jpg') no-repeat;
 }
 
-.michelangelo {
+#michelangelo {
     background: url('../img/michelangelo.jpg') no-repeat;
 }
 
-.artemisia-gentileschi {
+#artemisia-gentileschi {
     background: url('../img/artemisia-gentileschi.jpg') no-repeat;
 }
