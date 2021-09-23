@@ -41,14 +41,14 @@ body {
 /* Principal */
 .country {
     padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     border-bottom: 1px dashed rgb(202, 202, 202);
     font-family: 'Quicksand', sans-serif;
 }
 
     .country img {
         width: 30px;
-        border-radius: 20px;
+        border-radius: 15px;
         transition: all 0.5s;
     }
 
@@ -72,10 +72,13 @@ body {
 
 .gallery {
     margin: 0;
-    margin-bottom: 20px;
     padding-bottom: 30px;
     padding: 0; 
 }
+
+    .gallery:not(:last-of-type) {
+        margin-bottom: 50px;
+    }
 
 .artist {
     display: inline-block;
@@ -209,4 +212,5 @@ body {
 
     #modal-close:hover {
         color: blueviolet;
+        transform: rotate(180deg);
     }

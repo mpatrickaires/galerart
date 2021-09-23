@@ -1,11 +1,36 @@
 #leonardo-da-vinci {
-    background: url('../img/leonardo-da-vinci.jpg') no-repeat;
+    background-image: url('../img/leonardo-da-vinci.jpg');
+    background-size: contain;
 }
 
 #michelangelo {
-    background: url('../img/michelangelo.jpg') no-repeat;
+    background-image: url('../img/michelangelo.jpg');
 }
 
 #artemisia-gentileschi {
-    background: url('../img/artemisia-gentileschi.jpg') no-repeat;
+    background-image: url('../img/artemisia-gentileschi.jpg');
+}
+
+#tarsila-do-amaral {
+    background-image: url('../img/tarsila-do-amaral.jpg');
+}
+
+#di-cavalcanti {
+    background-image: url('../img/di-cavalcanti.jpg');
+}
+
+#oswaldo-goeldi {
+    background-image: url('../img/oswaldo-goeldi.jpg');
+}
+
+#pablo-picasso {
+    background-image: url('../img/pablo-picasso.jpg');
+}
+
+#salvador-dali {
+    background-image: url('../img/salvador-dali.jpg');
+}
+
+#francisco-goya {
+    background-image: url('../img/francisco-goya.jpg');
 }
