@@ -147,6 +147,29 @@ body {
             transition: all 1s;
         }
 
+
+/* Rodapé */
+#footer {
+    border-top: 2px solid rgb(202, 202, 202);
+    font-family: 'Helvetica', sans-serif;
+}
+
+    #footer img {
+        float: right;
+        width: 30px;
+        margin-top: 15px;
+        margin-right: 15px;
+        transition: all 0.8s;
+    }
+
+        #footer img:hover {
+            transform: scale(1.5);
+        }
+
+    #footer p {
+        margin-top: 25px;
+    }
+
 /* Modal - Arte */
 .modal-container {
     width: 100vw;
